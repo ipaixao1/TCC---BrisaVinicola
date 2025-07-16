@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=GFS+Didot&family=Pinyon+Script&family=Poppins:wght@200;300;400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root{
+    --vermelho-forte: #ee0000;
+    --main-color: #801818;
+    --bege-dourado:#ae8648;
+    --bege: #C0A788;
+    --black: #000000;
+    --qse-black: #1e1e1e;
+    --border: 1rem solid #747474;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--black);
+    color: black;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+.fas.fa-arrow-left {
+    text-decoration: none;
+    color: var(--bege);
+}
+
+.btn-voltar {
+    text-decoration: none;
+    color: var(--bege);
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+
+/* Estilizar a seção de checkout */
+#checkout {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#checkout h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    color: var(--bege);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Resumo do carrinho */
+.cart-summary {
+    margin-bottom: 30px;
+}
+
+.cart-summary h2 {
+    font-family: "Poppins", sans-serif; 
+    color: var(--bege);
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.cart-summary ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cart-summary ul li {
+    font-family: "Poppins", sans-serif; 
+    color: rgb(181, 178, 178);
+    margin-bottom: 5px;
+}
+
+.cart-summary p {
+    font-weight: bold;
+    color: var(--bege);
+    margin-top: 10px;
+}
+
+/* Estilizar o formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-family: "Poppins", sans-serif; 
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: -10px;
+    font-weight: 300;
+}
+
+form input, form select {
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+input, option, select {
+    background-color: var(--qse-black);
+    border: none;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border: none;
+}
+
+button {
+    background-color: var(--bege); 
+    color: #000000; 
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    font-family: "Poppins", sans-serif; 
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    margin-left: 38%;
+    width: 25%;
+}
+
+button:hover {
+    background-color: #3B3B3B; 
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    #checkout {
+        padding: 15px;
+    }
+
+    form {
+        gap: 10px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}

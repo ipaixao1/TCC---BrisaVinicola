@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=GFS+Didot&family=Pinyon+Script&family=Poppins:wght@200;300;400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+ 
+:root{
+    --vermelho-forte: #ee0000;
+    --main-color: #801818;
+    --bege-dourado:#ae8648;
+    --bege: #C0A788;
+    --black: #000000;
+    --qse-black: #1e1e1e;
+    --border: 1rem solid #747474;
+}
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--bege);
+    border-radius: 5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif; 
+    background-color: #000000;
+    color: rgb(168, 159, 159);
+}
+
+strong{
+    color: white;
+    font-size: 1.3rem;
+}
+
+tbody{
+    font-size: 1.1rem;
+}
+
+th{
+    color: white;
+    font-size: 1.3rem;
+}
+
+#resumo {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#resumo h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    color: var(--bege);
+    margin-bottom: 60px;    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 10px;
+    border: none;
+}
+
+table th {
+    background-color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(0, 0, 0);
+}
+.table-produto{
+    margin-top: 60px;
+}
+
+.data-pedido {
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 80px;
+    font-size: 1rem;
+    color: var(--bege);
+    font-size: 1rem;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: var(--bege);
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 300px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.btn-voltar:hover {
+    background-color:var(--bege-dourado);
+    transition: 0.3s;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    table {
+        font-size: 14px;
+    }
+
+    .btn-voltar {
+        width: 100%;
+        text-align: center;
+    }
+}

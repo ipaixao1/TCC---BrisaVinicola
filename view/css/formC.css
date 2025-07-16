@@ -1,0 +1,154 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --black: #0B0B0B;
+    --black1: #000;
+    --beige: #C0A788;
+    --white: #1f2124;
+    --white2: #d3d3d3;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #292929;
+}
+
+.login-container {
+    display: flex;
+    width: 800px;
+    height: 480px;
+    background: #181818;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Área da ilustração */
+.illustration {
+    flex: 1;
+    background: var(--black1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.illustration img {
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+/* Área do formulário */
+.form-section {
+    flex: 1.5;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+}
+
+h2 {
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 20px;
+    color: var(--beige);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    text-align: left;
+    font-size: 1rem; 
+    color: var(--white2);
+    font-family: "Poppins", sans-serif; 
+    font-weight: 400; 
+    margin-bottom: -10px; 
+    display: block;
+    letter-spacing: 0.5px; 
+    text-transform: capitalize;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    background-color: var(--black);
+    border: none;
+    color: var(--white2);
+    font-family: 'poppins', sans-serif;
+}
+
+input:focus {
+    border-color: var(--beige);
+    outline: none;
+}
+
+button {
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    background: var(--beige);
+    color: var(--black);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    transition: 0.3s;
+    background: var(--black);
+    color: var(--beige);
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: rgb(130, 124, 124);
+}
+
+a {
+    color: #007bb5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Adiciona rolagem vertical ao formulário */
+.form-section {
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+
+/* CSS para a barra de rolagem do form */
+.form-section::-webkit-scrollbar {
+    width: 6px;
+    background-color: var(--black);
+}
+
+.form-section::-webkit-scrollbar-thumb {
+    background-color: var(--beige);
+    border-radius: 10px;
+}

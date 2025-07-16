@@ -1,0 +1,72 @@
+:root {
+    --black: #0B0B0B;
+    --black1: #000;
+    --beige: #C0A788;
+    --white: #1f2124;
+    --white2: #d3d3d3;
+    --gray: #5e5e5e;
+  }
+  body{
+    background-color: var(--black);
+  }
+        .forgot-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: var(--black);
+        }
+
+        .forgot-logo {
+            margin-bottom: 20px;
+        }
+
+        .forgot-logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .forgot-form {
+            background-color: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .forgot-form h2 {
+            text-align: center;
+            color: var(--beige);
+            margin-bottom: 20px;
+        }
+
+        .forgot-form input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid var(--black);
+            border-radius: 5px;
+        }
+
+        .forgot-form button {
+            background: var(--beige);
+            color: var(--black);
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .forgot-form button:hover {
+            background: var(--white);
+        }
+
+        .forgot-form input{
+            background-color: var(--gray);
+            color: var(--white2);
+            border-color: var(--gray);
+        }

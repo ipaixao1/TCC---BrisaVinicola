@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Fredoka", sans-serif;
+}
+:root {
+    --black: #0B0B0B;
+    --black1: #000;
+    --beige: #C0A788;
+    --white: #1f2124;
+    --white2: #d3d3d3;
+  }
+body{
+    display: flex;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 110px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: var(--white2);
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: #0B0B0B;
+}
+.sidebar:hover{
+    width: 240px;
+    transition: 0.5s;
+}
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+.menu{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+
+}
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+.menu li:hover, 
+.active{
+    background: #1f2124;
+}
+.menu a{
+    color: var(--beige);
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.menu a span{
+    overflow: hidden;
+}
+.menu a i{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/*main body section*/
+.main--content{
+    position: relative;
+    background: var(--white);
+    width: 100%;
+    padding: 1rem;
+}
+.main--content i{
+    color: var(--beige);
+    font-size: 35px;
+}
+.header--wrapper img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background:var(--black) ;
+    border-radius: 10px;
+    padding: 10px 2rem;
+   margin-bottom: 1rem;
+}
+.header--title{
+    color: var(--beige);
+}
+.user--info{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.search--box{
+    background:var(--white2) ;
+    border-radius: 15px;
+    color: var(--black1);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+}
+.search--box input{
+    background: transparent;
+    padding: 10px; 
+}
+.search--box i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5 ease-out ;
+    color: var(--black);
+}
+.search--box i:hover{
+    transform: scale(1.2);
+}
+
+ /*Tabela Administradores*/
+
+.table-container {
+    margin: 20px 0;
+    padding: 10px;
+    background: var(--black);
+    border-radius: 10px;
+    color: var(--white2);
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: 'Fredoka', sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: var(--black);
+    color: var(--beige);
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid var(--black1);
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: var(--white2);
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--black);
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--black);
+}
+
+.edit-btn, .delete-btn {
+    background-color: var(--black);
+    color: var(--beige);
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cards {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.card {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black);
+    color: var(--white2);
+    padding: 1rem;
+    border-radius: 10px;
+}
+.card-icon {
+    font-size: 2rem;
+    color: var(--beige);
+}
+.card-info {
+    text-align: right;
+}
+.card-info h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.card-info p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+/* Tabela Fornecedores */
+.table-container {
+    margin: 20px 0;
+    padding: 10px;
+    background: var(--black);
+    border-radius: 10px;
+    color: var(--white2);
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: 'Fredoka', sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: var(--black);
+    color: var(--beige);
+    text-align: left;
+}
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid var(--black1);
+}
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: var(--black);
+}
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid var(--black);
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: var(--black);
+}
+#editAdminBtn, #deletAdminBtn {
+    background-color: var(--black);
+    color: var(--beige);
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#addAdminBtn {
+    background-color: var(--black);
+    color: var(--beige);
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#editAdminBtn:hover {
+    background-color: var(--beige);
+    color: var(--black);
+}
+#deletAdminBtn:hover {
+    background-color: var(--white);
+    color: var (--black);
+}
+#addAdminBtn:hover {
+    background-color: var(--beige);
+    color: var (--black);
+}
+#addAdminBtn{
+    background-color: var(--black);
+    color: var(--beige);
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#editAdminBtn:hover {
+    background-color: var(--beige);
+    color: var(--black);
+}
+
+#deletAdminBtn:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+#addAdminBtn:hover{
+    background-color: var(--beige);
+    color: var(--black);
+}
+
+
+
+/* Modal Edit */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--white);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid var(--black);
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close-button {
+    color: var(--black);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--beige);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#editForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#editForm label {
+    margin-top: 10px;
+}
+
+#editForm input,
+#editForm select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+}
+
+#editForm button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--beige);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#editForm button:hover {
+    background-color: var(--beige);
+    color: var(--black);
+}
+
+
+/* Modal Add */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: var(--white);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid var(--black);
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close-button {
+    color: var(--black);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: var(--beige);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#addForm, #editForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#addForm label, #editForm label {
+    margin-top: 10px;
+}
+
+#addForm input, #editForm input,
+#addForm select, #editForm select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+}
+
+#addForm button, #editForm button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--beige);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addForm button:hover, #editForm button:hover {
+    background-color: var(--beige);
+    color: var(--black);
+}
+.chart-container {
+    background: var(--black);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--white2);
+    margin-top: 20px;
+}
+#Form {
+    display: flex;
+    flex-direction: column;
+}
+
+#Form label {
+    margin-top: 10px;
+}
+
+#Form input,
+#Form select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--black);
+}
+
+#Form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--black);
+    color: var(--beige);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Form button:hover {
+    background-color: var(--beige);
+    color: var(--black);
+}
+
+
+
+
+
